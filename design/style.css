@@ -1,0 +1,166 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background: #000;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+overlay {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #656565a4;
+}
+
+grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+card {}
+
+card:hover {
+    cursor: pointer;
+}
+
+card.big {
+    height: 50vw;
+    width: 50vw;
+    background-size: auto 50vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+card.medium {
+    height: 25vw;
+    width: 25vw;
+    background-size: auto 25vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+card.small {
+    height: 12.5vw;
+    width: 12.5vw;
+    background-size: auto 12.5vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+comments {
+    background: #fff;
+    width: 25vw;
+    height: 50vw;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in-frames linear forwards;
+}
+
+.fade-out {
+    opacity: 1;
+    animation: fad-out-frames linear forwards;
+}
+
+.animation-fast {
+    animation-duration: 0.1s;
+}
+
+.animation-normal {
+    animation-duration: 0.5s;
+}
+
+.animation-slow {
+    animation-duration: 1s;
+}
+
+.animation-delay-1 {
+    animation-delay: 0.1s;
+}
+.animation-delay-2 {
+    animation-delay: 0.2s;
+}
+.animation-delay-3 {
+    animation-delay: 0.3s;
+}
+.animation-delay-4 {
+    animation-delay: 0.4s;
+}
+.animation-delay-5 {
+    animation-delay: 0.5s;
+}
+.animation-delay-6 {
+    animation-delay: 0.6s;
+}
+.animation-delay-7 {
+    animation-delay: 0.7s;
+}
+.animation-delay-8 {
+    animation-delay: 0.8s;
+}
+
+@media screen and (max-width: 1440px) {
+    card.big {
+        height: 100vw;
+        width: 100vw;
+        background-size: auto 100vw;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    card.medium {
+        height: 50vw;
+        width: 50vw;
+        background-size: auto 50vw;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    card.small {
+        height: 25vw;
+        width: 25vw;
+        background-size: auto 25vw;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    card.big,
+    card.medium,
+    card.small {
+        height: 100vw;
+        width: 100vw;
+        background-size: auto 100vw;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+@keyframes fade-in-frames {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out-frames {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
